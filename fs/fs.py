@@ -128,7 +128,7 @@ def rmdir(path, recursive=True, **kwargs):
         return shutil.rmtree(path, **kwargs)
     else:
         import os
-        return os.remdir(path, **kwargs)
+        return os.rmdir(path, **kwargs)
 
 def rmfiles(paths, **kwargs):
     """Remove an array of files *path*"""
